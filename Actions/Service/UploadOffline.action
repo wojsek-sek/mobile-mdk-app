@@ -1,0 +1,9 @@
+{
+    "Service": "/comMDKAPP/Services/SampleServiceV2.service",
+    "_Type": "Action.Type.OfflineOData.Upload",
+    "ActionResult": {
+        "_Name": "sync"
+    },
+    "OnSuccess": "/comMDKAPP/Actions/Service/DownloadStartedMessage.action",
+    "OnFailure": "/comMDKAPP/Actions/Service/SyncFailureMessage.action"
+}

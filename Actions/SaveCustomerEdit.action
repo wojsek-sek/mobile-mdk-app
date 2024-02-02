@@ -1,0 +1,25 @@
+{
+	"_Type": "Action.Type.ODataService.UpdateEntity",
+	"ActionResult": {
+		"_Name": "SaveCustomerEdit"
+	},
+	"OnFailure": "/comMDKAPP/Actions/SaveCustomerEditFailMessage.action",
+	"OnSuccess": "/comMDKAPP/Actions/CloseModalPageComlete.action",
+	"ValidationRule": "/comMDKAPP/Rules/EmailValidation.js",
+	"Target": {
+		"Service": "/comMDKAPP/Services/SampleServiceV2.service",
+		"EntitySet": "Customers",
+		"ReadLink": "{@odata.readLink}"
+	},
+	"Properties": {
+		"City": "#Control:FCUpdateCustomerCity/#Value",
+		"Country": "#Control:FCUpdateCustomerCountry/#Value",
+		"DateOfBirth": "#Control:FCUpdateCustomerDateOfBirth/#Value",
+		"EmailAddress": "#Control:FCUpdateCustomerEmail/#Value",
+		"FirstName": "#Control:FCUpdateCustomerFirstName/#Value",
+		"HouseNumber": "#Control:FCUpdateCustomerHouseNumber/#Value",
+		"LastName": "#Control:FCUpdateCustomerLastName/#Value",
+		"PhoneNumber": "#Control:FCUpdateCustomerPhone/#Value",
+		"PostalCode": "#Control:FCUpdateCustomerPostalCode/#Value"
+	}
+}

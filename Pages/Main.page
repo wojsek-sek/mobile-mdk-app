@@ -1,0 +1,85 @@
+{
+	"Controls": [
+		{
+			"FilterFeedbackBar": {
+				"ShowAllFilters": false,
+				"_Type": "Control.Type.FilterFeedbackBar"
+			},
+			"_Type": "Control.Type.SectionedTable",
+			"_Name": "SectionedTable0",
+			"Sections": [
+				{
+					"Separators": {
+						"TopSectionSeparator": false,
+						"BottomSectionSeparator": true,
+						"HeaderSeparator": true,
+						"FooterSeparator": true,
+						"ControlSeparator": true
+					},
+					"Layout": {
+						"LayoutType": "Vertical",
+						"HorizontalAlignment": "Leading"
+					},
+					"_Type": "Section.Type.ButtonTable",
+					"_Name": "SectionButtonTable0",
+					"Visible": true,
+					"EmptySection": {
+						"FooterVisible": false
+					},
+					"Buttons": [
+						{
+							"Styles": {
+								"Button": "button-Customers"
+							},
+							"_Name": "SectionButton0",
+							"Title": "$(L,'custButton')",
+							"Alignment": "Center",
+							"ButtonType": "Text",
+							"Semantic": "Tint",
+							"Image": "sap-icon://customer",
+							"ImagePosition": "Leading",
+							"FullWidth": false,
+							"Visible": true,
+							"Enabled": true,
+							"OnPress": "/comMDKAPP/Actions/NavMainToCustomers.action"
+						},
+						{
+							"Styles": {
+								"Button": "button-Customers"
+							},
+							"_Name": "SectionButton1",
+							"Title": "YouTube",
+							"Alignment": "Center",
+							"ButtonType": "Text",
+							"Semantic": "Tint",
+							"Image": "sap-icon://video",
+							"ImagePosition": "Leading",
+							"FullWidth": false,
+							"Visible": true,
+							"Enabled": true,
+							"OnPress": "/comMDKAPP/Rules/NavToYouTubeRule.js"
+						}
+					]
+				}
+			]
+		}
+	],
+	"_Type": "Page",
+	"_Name": "Main",
+	"Caption": "Main",
+	"PrefersLargeCaption": true,
+	"ActionBar": {
+		"Items": [
+			{
+				"_Name": "ActionBarItem0",
+				"Caption": "User Menu",
+				"Icon": "sap-icon://customer",
+				"Position": "Right",
+				"IsIconCircular": false,
+				"Visible": true,
+				"OnPress": "/comMDKAPP/Actions/Application/UserMenuPopover.action"
+			}
+		],
+		"_Name": "ActionBar1"
+	}
+}

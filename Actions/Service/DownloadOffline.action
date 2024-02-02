@@ -1,0 +1,26 @@
+{
+    "Service": "/comMDKAPP/Services/SampleServiceV2.service",
+    "DefiningRequests": [{
+            "Name": "Customers",
+            "Query": "Customers"
+        },
+        {
+            "Name": "SalesOrderItems",
+            "Query": "SalesOrderItems"
+        },
+        {
+            "Name": "SalesOrderHeaders",
+            "Query": "SalesOrderHeaders"
+        },
+        {
+            "Name": "Products",
+            "Query": "Products"
+        }
+    ],
+    "_Type": "Action.Type.OfflineOData.Download",
+    "ActionResult": {
+        "_Name": "sync"
+    },
+    "OnFailure": "/comMDKAPP/Actions/Service/SyncFailureMessage.action",
+    "OnSuccess": "/comMDKAPP/Rules/ErrorArchive/ErrorArchive_CheckForSyncError.js"
+}

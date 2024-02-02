@@ -1,0 +1,171 @@
+{
+	"Controls": [
+		{
+			"FilterFeedbackBar": {
+				"ShowAllFilters": false,
+				"_Type": "Control.Type.FilterFeedbackBar"
+			},
+			"_Type": "Control.Type.SectionedTable",
+			"_Name": "SectionedTable0",
+			"Sections": [
+				{
+					"Separators": {
+						"TopSectionSeparator": false,
+						"BottomSectionSeparator": true,
+						"HeaderSeparator": true,
+						"FooterSeparator": true,
+						"ControlSeparator": true
+					},
+					"Controls": [
+						{
+							"Value": "{FirstName}",
+							"_Type": "Control.Type.FormCell.SimpleProperty",
+							"_Name": "FCCreateCustomerFirstName",
+							"IsVisible": true,
+							"Separator": true,
+							"Caption": "First Name",
+							"PlaceHolder": "PlaceHolder",
+							"Enabled": true,
+							"IsEditable": true
+						},
+						{
+							"Value": "{LastName}",
+							"_Type": "Control.Type.FormCell.SimpleProperty",
+							"_Name": "FCCreateCustomerLastName",
+							"IsVisible": true,
+							"Separator": true,
+							"Caption": "Last Name",
+							"PlaceHolder": "Enter Value",
+							"Enabled": true,
+							"IsEditable": true
+						},
+						{
+							"Value": "{PhoneNumber}",
+							"_Type": "Control.Type.FormCell.SimpleProperty",
+							"_Name": "FCCreateCustomerPhone",
+							"IsVisible": true,
+							"Separator": true,
+							"Caption": "Phone",
+							"PlaceHolder": "Enter Value",
+							"KeyboardType": "Phone",
+							"Enabled": true,
+							"IsEditable": true
+						},
+						{
+							"Value": "{EmailAddress}",
+							"_Type": "Control.Type.FormCell.SimpleProperty",
+							"_Name": "FCCreateCustomerEmail",
+							"IsVisible": true,
+							"Separator": true,
+							"Caption": "Email Address",
+							"PlaceHolder": "Enter Value",
+							"KeyboardType": "Email",
+							"Enabled": true,
+							"IsEditable": true
+						},
+						{
+							"Value": "{City}",
+							"_Type": "Control.Type.FormCell.SimpleProperty",
+							"_Name": "FCCreateCustomerCity",
+							"IsVisible": true,
+							"Separator": true,
+							"Caption": "City",
+							"PlaceHolder": "Enter Value",
+							"Enabled": true,
+							"IsEditable": true
+						},
+						{
+							"Value": "{Country}",
+							"_Type": "Control.Type.FormCell.SimpleProperty",
+							"_Name": "FCCreateCustomerCountry",
+							"IsVisible": true,
+							"Separator": true,
+							"Caption": "Country",
+							"PlaceHolder": "Enter Value",
+							"Enabled": true,
+							"IsEditable": true
+						},
+						{
+							"Value": "{Street}",
+							"_Type": "Control.Type.FormCell.SimpleProperty",
+							"_Name": "FCCreateCustomerStreet",
+							"IsVisible": true,
+							"Separator": true,
+							"Caption": "Street",
+							"PlaceHolder": "Enter Value",
+							"Enabled": true,
+							"IsEditable": true
+						},
+						{
+							"Value": "{HouseNumber}",
+							"_Type": "Control.Type.FormCell.SimpleProperty",
+							"_Name": "FCCreateCustomerHouseNumber",
+							"IsVisible": true,
+							"Separator": true,
+							"Caption": "House Number",
+							"PlaceHolder": "Enter Value",
+							"KeyboardType": "Number",
+							"Enabled": true,
+							"IsEditable": true
+						},
+						{
+							"Value": "{PostalCode}",
+							"_Type": "Control.Type.FormCell.SimpleProperty",
+							"_Name": "FCCreateCustomerPostalCode",
+							"IsVisible": true,
+							"Separator": true,
+							"Caption": "Postal Code",
+							"PlaceHolder": "Enter Value",
+							"KeyboardType": "Number",
+							"Enabled": true,
+							"IsEditable": true
+						},
+						{
+							"Value": "{DateOfBirth}",
+							"_Type": "Control.Type.FormCell.DatePicker",
+							"_Name": "FCCreateCustomerDateOfBirth",
+							"IsVisible": true,
+							"Separator": true,
+							"Caption": "Date of birth",
+							"IsEditable": true,
+							"Mode": "Date"
+						}
+					],
+					"Visible": true,
+					"EmptySection": {
+						"FooterVisible": false
+					},
+					"_Type": "Section.Type.FormCell",
+					"_Name": "SectionFormCell0"
+				}
+			]
+		}
+	],
+	"_Type": "Page",
+	"_Name": "CreateCustomer",
+	"Caption": "Create Customer",
+	"PrefersLargeCaption": true,
+	"ActionBar": {
+		"Items": [
+			{
+				"_Name": "ActionBarItem0",
+				"Caption": "Item",
+				"SystemItem": "Cancel",
+				"Position": "Left",
+				"IsIconCircular": false,
+				"Visible": true,
+				"OnPress": "/comMDKAPP/Actions/CancelCustomerEdit.action"
+			},
+			{
+				"_Name": "ActionBarItem1",
+				"Caption": "Item",
+				"SystemItem": "Save",
+				"Position": "Right",
+				"IsIconCircular": false,
+				"Visible": true,
+				"OnPress": "/comMDKAPP/Actions/CreateNewCustomer.action"
+			}
+		],
+		"_Name": "ActionBar1"
+	}
+}

@@ -1,0 +1,10 @@
+{
+	"_Type": "Action.Type.Message",
+	"ActionResult": {
+		"_Name": "ConfirmLeaveApp"
+	},
+	"Message": "Do you want to leave the current app and open YouTube?",
+	"Title": "Open YouTuber",
+	"OKCaption": "OK",
+	"CancelCaption": "Cancel"
+}

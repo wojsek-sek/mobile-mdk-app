@@ -1,0 +1,10 @@
+{
+    "_Type": "Action.Type.OfflineOData.Close",
+    "Service": "/comMDKAPP/Services/SampleServiceV2.service",
+    "Force": true,
+    "ActionResult": {
+        "_Name": "close"
+    },
+    "OnSuccess": "/comMDKAPP/Actions/Service/CloseOfflineSuccessMessage.action",
+    "OnFailure": "/comMDKAPP/Actions/Service/CloseOfflineFailureMessage.action"
+}

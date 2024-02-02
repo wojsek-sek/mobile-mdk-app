@@ -1,0 +1,9 @@
+{
+	"_Type": "Action.Type.Message",
+	"ActionResult": {
+		"_Name": "ValidationEmailFail"
+	},
+	"Message": "Email is not valid. Please correct it!",
+	"Title": "Validation Email",
+	"OKCaption": "OK"
+}

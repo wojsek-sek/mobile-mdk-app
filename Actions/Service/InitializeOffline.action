@@ -1,0 +1,28 @@
+{
+    "Service": "/comMDKAPP/Services/SampleServiceV2.service",
+    "DefiningRequests": [{
+            "Name": "Customers",
+            "Query": "Customers"
+        },
+        {
+            "Name": "SalesOrderItems",
+            "Query": "SalesOrderItems"
+        },
+        {
+            "Name": "SalesOrderHeaders",
+            "Query": "SalesOrderHeaders"
+        },
+        {
+            "Name": "Products",
+            "Query": "Products"
+        }
+    ],
+    "_Type": "Action.Type.ODataService.Initialize",
+    "ShowActivityIndicator": true,
+    "ActivityIndicatorText": "Downloading...",
+    "ActionResult": {
+        "_Name": "init"
+    },
+    "OnSuccess": "/comMDKAPP/Actions/Service/InitializeOfflineSuccessMessage.action",
+    "OnFailure": "/comMDKAPP/Actions/Service/InitializeOfflineFailureMessage.action"
+}

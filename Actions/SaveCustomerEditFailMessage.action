@@ -1,0 +1,9 @@
+{
+	"_Type": "Action.Type.Message",
+	"ActionResult": {
+		"_Name": "SaveCustomerEditFailMessage"
+	},
+	"Message": "There was an error during the update operation: {#ActionResults:SaveCustomerEdit/error} !",
+	"Title": "Update Customer",
+	"OKCaption": "OK"
+}

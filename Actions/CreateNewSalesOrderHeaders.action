@@ -1,0 +1,35 @@
+{
+	"_Type": "Action.Type.ODataService.CreateRelatedEntity",
+	"ActionResult": {
+		"_Name": "CreateNewSalesOrderHeaders"
+	},
+	"OnFailure": {
+		"Name": "/comMDKAPP/Actions/GenericMessageBox.action",
+		"Properties": {
+			"Message": "Failed to Create Sales Order record - {#ActionResults:CreateNewSalesOrderHeaders/error}",
+			"Title": "Create Sales Order",
+			"OKCaption": "OK"
+		}
+	},
+	"OnSuccess": "/comMDKAPP/Actions/CloseModalPageComlete.action",
+	"Target": {
+		"Service": "/comMDKAPP/Services/SampleServiceV2.service",
+		"EntitySet": "SalesOrderHeaders"
+	},
+	"ParentLink": {
+		"Target": {
+			"EntitySet": "Customers",
+			"ReadLink": "{@odata.readLink}"
+		},
+		"Property": "SalesOrders"
+	},
+	"Properties": {
+		"CreatedAt": "#Control:FCSalesCreateCreateAt/#Value",
+		"CurrencyCode": "#Control:FCSalesCreateCurrencyCode/#Value",
+		"GrossAmount": "#Control:FCSalesCreateGrossAmount/#Value",
+		"LifeCycleStatus": "#Control:FCSalesCreateLifeCycleStatus/#Value",
+		"LifeCycleStatusName": "#Control:FCSalesCreateLifeCycleStatusName/#Value",
+		"NetAmount": "#Control:FCSalesCreateNetAmount/#Value",
+		"TaxAmount": "#Control:FCSalesCreateTaxAmount/#Value"
+	}
+}

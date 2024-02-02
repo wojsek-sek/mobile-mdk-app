@@ -1,0 +1,9 @@
+{
+	"_Type": "Action.Type.Message",
+	"ActionResult": {
+		"_Name": "pushRegisterSuccessMessage"
+	},
+	"Message": "Hello, have a nice day :D",
+	"Title": "Welcome",
+	"OKCaption": "OK"
+}

@@ -1,0 +1,9 @@
+{
+	"_Type": "Action.Type.Message",
+	"ActionResult": {
+		"_Name": "CustomerCreateFailMessage"
+	},
+	"Message": "Create New Customer failed: {#ActionResults:CreateNewCustomer/error}!",
+	"Title": "Create Customer",
+	"OKCaption": "OK"
+}

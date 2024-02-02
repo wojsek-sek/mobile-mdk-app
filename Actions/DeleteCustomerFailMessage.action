@@ -1,0 +1,9 @@
+{
+	"_Type": "Action.Type.Message",
+	"ActionResult": {
+		"_Name": "DeleteCustomerFailMessage"
+	},
+	"Message": "Customer delete failed: {#ActionResults:DeleteCustomerAction/error}.",
+	"Title": "Delete Failed",
+	"OKCaption": "OK"
+}

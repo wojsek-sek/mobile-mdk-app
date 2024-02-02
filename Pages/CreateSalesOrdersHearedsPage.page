@@ -1,0 +1,134 @@
+{
+	"Controls": [
+		{
+			"_Type": "Control.Type.SectionedTable",
+			"_Name": "SectionedTable0",
+			"Sections": [
+				{
+					"Visible": true,
+					"EmptySection": {
+						"FooterVisible": false
+					},
+					"Separators": {
+						"TopSectionSeparator": false,
+						"BottomSectionSeparator": true,
+						"HeaderSeparator": true,
+						"FooterSeparator": true,
+						"ControlSeparator": true
+					},
+					"_Type": "Section.Type.FormCell",
+					"_Name": "SectionFormCell0",
+					"Controls": [
+						{
+							"Value": "EUR",
+							"_Type": "Control.Type.FormCell.SimpleProperty",
+							"_Name": "FCSalesCreateCurrencyCode",
+							"IsVisible": true,
+							"Separator": true,
+							"Caption": "Currency Code",
+							"PlaceHolder": "Enter Value",
+							"Enabled": true,
+							"IsEditable": true
+						},
+						{
+							"Value": "77.00",
+							"_Type": "Control.Type.FormCell.SimpleProperty",
+							"_Name": "FCSalesCreateNetAmount",
+							"IsVisible": true,
+							"Separator": true,
+							"Caption": "Net Amount",
+							"PlaceHolder": "Enter Value",
+							"Enabled": true,
+							"IsEditable": true
+						},
+						{
+							"Value": "100.00",
+							"_Type": "Control.Type.FormCell.SimpleProperty",
+							"_Name": "FCSalesCreateTaxAmount",
+							"IsVisible": true,
+							"Separator": true,
+							"Caption": "Tax Amount ",
+							"PlaceHolder": "Enter Value",
+							"Enabled": true,
+							"IsEditable": true
+						},
+						{
+							"Value": "177.00",
+							"_Type": "Control.Type.FormCell.SimpleProperty",
+							"_Name": "FCSalesCreateGrossAmount",
+							"IsVisible": true,
+							"Separator": true,
+							"Caption": "Gross Amount",
+							"PlaceHolder": "Enter Value",
+							"Enabled": true,
+							"IsEditable": true
+						},
+						{
+							"Value": "N",
+							"_Type": "Control.Type.FormCell.SimpleProperty",
+							"_Name": "FCSalesCreateLifeCycleStatus",
+							"IsVisible": true,
+							"Separator": true,
+							"Caption": "Lifecycle Status",
+							"PlaceHolder": "Enter Value",
+							"Enabled": true,
+							"IsEditable": true
+						},
+						{
+							"Value": "New",
+							"_Type": "Control.Type.FormCell.SimpleProperty",
+							"_Name": "FCSalesCreateLifeCycleStatusName",
+							"IsVisible": true,
+							"Separator": true,
+							"Caption": "Lifecycle Status Name",
+							"PlaceHolder": "Enter Value",
+							"Enabled": true,
+							"IsEditable": true
+						},
+						{
+							"Value": "Enter Date",
+							"_Type": "Control.Type.FormCell.DatePicker",
+							"_Name": "FCSalesCreateCreateAt",
+							"IsVisible": true,
+							"Separator": true,
+							"Caption": "Creation Date",
+							"IsEditable": true,
+							"Mode": "Datetime"
+						}
+					]
+				}
+			],
+			"FilterFeedbackBar": {
+				"ShowAllFilters": false,
+				"_Type": "Control.Type.FilterFeedbackBar"
+			}
+		}
+	],
+	"_Type": "Page",
+	"_Name": "CreateSalesOrdersHearedsPage",
+	"Caption": "CreateSalesOrdersHearedsPage",
+	"PrefersLargeCaption": true,
+	"ActionBar": {
+		"Items": [
+			{
+				"_Name": "ActionBarItem0",
+				"Caption": "Item",
+				"SystemItem": "Cancel",
+				"Position": "Left",
+				"IsIconCircular": false,
+				"Visible": true,
+				"OnPress": "/comMDKAPP/Actions/CancelCustomerEdit.action"
+			},
+			{
+				"_Name": "ActionBarItem1",
+				"Caption": "Item",
+				"SystemItem": "Save",
+				"Position": "Right",
+				"IsIconCircular": false,
+				"Visible": true,
+				"OnPress": "/comMDKAPP/Actions/CreateNewSalesOrderHeaders.action"
+			}
+		],
+		"_Name": "ActionBar1"
+	}
+}

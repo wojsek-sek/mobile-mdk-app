@@ -1,0 +1,8 @@
+{
+	"_Type": "Action.Type.PushNotificationRegister",
+	"ActionResult": {
+		"_Name": "pushRegisterAction"
+	},
+	"OnFailure": "/comMDKAPP/Actions/PushRegisterFailureMessage.action",
+	"OnSuccess": "/comMDKAPP/Actions/pushRegisterSuccessMessage.action"
+}

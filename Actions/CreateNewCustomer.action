@@ -1,0 +1,24 @@
+{
+	"_Type": "Action.Type.ODataService.CreateEntity",
+	"ActionResult": {
+		"_Name": "CreateNewCustomer"
+	},
+	"OnFailure": "/comMDKAPP/Actions/CustomerCreateFailMessage.action",
+	"OnSuccess": "/comMDKAPP/Actions/CloseModalPageComlete.action",
+	"Target": {
+		"Service": "/comMDKAPP/Services/SampleServiceV2.service",
+		"EntitySet": "Customers"
+	},
+	"Properties": {
+		"City": "#Control:FCCreateCustomerCity/#Value",
+		"Country": "#Control:FCCreateCustomerCountry/#Value",
+		"DateOfBirth": "#Control:FCCreateCustomerDateOfBirth/#Value",
+		"EmailAddress": "#Control:FCCreateCustomerEmail/#Value",
+		"FirstName": "#Control:FCCreateCustomerFirstName/#Value",
+		"HouseNumber": "#Control:FCCreateCustomerHouseNumber/#Value",
+		"LastName": "#Control:FCCreateCustomerLastName/#Value",
+		"PhoneNumber": "#Control:FCCreateCustomerPhone/#Value",
+		"PostalCode": "#Control:FCCreateCustomerPostalCode/#Value",
+		"Street": "#Control:FCCreateCustomerStreet/#Value"
+	}
+}
